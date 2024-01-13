@@ -1,15 +1,22 @@
 version: '3.8'
 services:
   spring-boot-app:
-    build: . # Build image from Dockerfile in the current directory
+    build: .
     ports:
-      - "8080:8080" # Map container port 8080 to host port 8080
+      - "8080:8080"
     depends_on:
-      - database # Start database before the app
+      - database
+    networks:
+      - my-network
 
   database:
-    image: postgres:15.2 # Use a PostgreSQL database image
+    image: postgres:15.2
     environment:
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: mydatabase
+    networks:
+      - my-network
+
+networks:
+  my-network:
