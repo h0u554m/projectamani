@@ -17,8 +17,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<maven.compiler.source>3.11.0</maven.compiler.source>
-		<maven.compiler.target>3.11.0</maven.compiler.target>
+		<spring-boot.version>2.5.5</spring-boot.version>
 	</properties>
 	<dependencies>
 		<dependency>
