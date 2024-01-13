@@ -1,0 +1,4 @@
+com\imagesshow\springboot\controllers\PhotoController.class
+com\imagesshow\springboot\Application$AzureBlobStorageConfig.class
+com\imagesshow\springboot\services\PhotoService.class
+com\imagesshow\springboot\Application.class
